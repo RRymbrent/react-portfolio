@@ -5,7 +5,9 @@ export const Home = () => {
         <section id="home" className="min-h-screen flex items-center justify-center relative">
             <div className="text-center z-10 px-4">
 
-                <h2 className="text-5xl md:text-7xl font-bold mb-6">Hi, I'm Rymbrent</h2>
+            <h2 className="text-7xl font-bold mb-8 bg-gradient-to-r font-bold text-center">
+            Hi, I'm Rymbrent
+          </h2>
                 
                 <p className="text-yellow-300 text-lg mb-8 max-w-3xl mx-auto text-justify font-mono">
                  Frontend Developer | Backend Developer | Wordpress Developer

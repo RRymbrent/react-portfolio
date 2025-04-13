@@ -182,4 +182,6 @@ export const About = () => {
       </div>
     </section>
   );
+
 };
+
