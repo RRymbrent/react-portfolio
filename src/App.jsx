@@ -102,12 +102,12 @@ function App() {
       {showScrollButton && (
         <button
           onClick={scrollToTop}
-          className="fixed bottom-8 right-8 z-50 p-3 bg-white rounded-full hover:border hover:trasparent "
+          className="fixed bottom-8 right-8 z-50 p-3 rounded-full hover:border hover:border-yellow-300 bg-yellow-300  hover:bg-transparent"
           aria-label="Back to top"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            className="h-6 w-6 text-black hover:white"
+            className="h-6 w-6 text-black hover:text-white"
             fill="none"
             viewBox="0 0 24 24"
             stroke="currentColor"

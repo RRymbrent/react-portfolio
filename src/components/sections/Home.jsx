@@ -5,7 +5,7 @@ export const Home = () => {
         <section id="home" className="min-h-screen flex items-center justify-center relative">
             <div className="text-center z-10 px-4">
 
-            <h2 className="text-7xl font-bold mb-8 bg-gradient-to-r font-bold text-center">
+            <h2 className="text-7xl font-bold mb-8 bg-gradient-to-r text-center">
             Hi, I'm Rymbrent
           </h2>
                 
@@ -19,7 +19,7 @@ export const Home = () => {
                         href="https://www.linkedin.com/in/rymbrent-rabano/" 
                         target="_blank" 
                         rel="noopener noreferrer"
-                        className="bg-black hover:border text-white p-3 rounded-full transition-all duration-300 hover:scale-110 hover:shadow-lg"
+                        className="bg-black hover:border text-white p-3 rounded-full transition-all duration-300 hover:scale-110 hover:bg-yellow-300 hover:border-yellow-300 hover:text-black"
                         aria-label="LinkedIn"
                     >
                         <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
@@ -30,7 +30,7 @@ export const Home = () => {
                         href="https://www.instagram.com/oksiisca/?hl=en" 
                         target="_blank" 
                         rel="noopener noreferrer"
-                        className="bg-black hover:border text-white p-3 rounded-full transition-all duration-300 hover:scale-110 hover:shadow-lg"
+                        className="bg-black hover:border text-white p-3 rounded-full transition-all duration-300 hover:scale-110 hover:bg-yellow-300 hover:border-yellow-300 hover:text-black"
                         aria-label="Instagram"
                     >
                         <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
@@ -38,10 +38,10 @@ export const Home = () => {
                         </svg>
                     </a>
                     <a 
-                        href="mailto:your.email@example.com" 
+                        href="mailto:dev.rymbrentrabano@gmail.com" 
                         target="_blank" 
                         rel="noopener noreferrer"
-                        className="bg-black hover:border text-white p-3 rounded-full transition-all duration-300 hover:scale-110 hover:shadow-lg"
+                        className="bg-black hover:border text-white p-3 rounded-full transition-all duration-300 hover:scale-110 hover:bg-yellow-300 hover:border-yellow-300 hover:text-black"
                         aria-label="Email"
                     >
                         <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
@@ -51,8 +51,8 @@ export const Home = () => {
                 </div>
                 
                 <div className="flex justify-center space-x-4">
-                    <a href="#projects" className="bg-white text-black py-3 px-6 rounded font-medium transition relative overflow-hidden hover:-translate-y-0.5 hover:shadow-[0_0_15px_rgba(59, 130, 246, 0.4)] hover:bg-transparent hover:text-white hover:border">View Projects</a>
-                    <a href="#contact" className="border border-white-500/50 text-white-500 py-3 px-6 rounded font-medium transition-all duration-200 hover:-translate-y-0.5 hover:shadow-[0_0_15px_rgba(59, 130, 246, 0.2)] hover:bg-white hover:text-black">Contact Me</a>
+                    <a href="#projects" className="bg-white text-black py-3 px-6 rounded font-medium transition relative overflow-hidden hover:-translate-y-0.5 hover:shadow-[0_0_15px_rgba(59, 130, 246, 0.4)] hover:bg-transparent hover:text-white hover:border-yellow-300 hover:border">View Projects</a>
+                    <a href="#contact" className="border border-yellow-300 text-white-500 py-3 px-6 rounded font-medium transition-all duration-200 hover:-translate-y-0.5 hover:shadow-[0_0_15px_rgba(59, 130, 246, 0.2)] hover:bg-yellow-300 hover:text-black">Contact Me</a>
                 </div>
             </div>
         </section>
