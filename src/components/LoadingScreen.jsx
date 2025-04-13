@@ -41,7 +41,7 @@ export const LoadingScreen = ({ onComplete }) => {
                     {text} 
                     <span className="animate-blink ml-1 text-yellow-300">|</span>
                 </div>
-                <div className="w-[300px] h-[2px] bg-gray-800 rounded relative overflow-hidden">
+                <div className="w-[350px] h-[2px] bg-gray-800 rounded relative overflow-hidden">
                     <div 
                         className="h-full bg-yellow-300 shadow-[0_0_15px_#3b82f6] animate-loading-bar" 
                         style={{ width: `${(text.length / fullText.length) * 100}%` }}

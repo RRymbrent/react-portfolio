@@ -70,17 +70,17 @@ function App() {
             },
             move: {
               enable: true,
-              speed: 1.5,
+              speed: 2,
               direction: "none",
               outModes: { default: "bounce" },
             },
             number: {
-              value: 60,
+              value: 100,
               density: { enable: true },
             },
             opacity: { value: 0.7 },
-            shape: { type: "circle" },
-            size: { value: { min: 1, max: 3 } },
+            shape: { type: "triangle" },
+            size: { value: { min: 3, max: 3 } },
           },
           detectRetina: true,
         }}
