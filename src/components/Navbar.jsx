@@ -48,6 +48,12 @@ export const Navbar = ({ menuOpen, setMenuOpen }) => {
               About
             </a>
             <a
+              href="#skills"
+              className="text-gray-300 hover:text-white transition-colors hover:bg-white/50 rounded px-3 py-1"
+            >
+              Skills
+            </a>
+            <a
               href="#projects"
               className="text-gray-300 hover:text-white transition-colors hover:bg-white/50 rounded px-3 py-1"
             >

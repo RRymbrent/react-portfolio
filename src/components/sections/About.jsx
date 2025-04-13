@@ -1,7 +1,8 @@
-// src/components/sections/About.jsx
-import { useEffect, useRef, useState } from 'react';
 
-// Reveal Animation Components
+import { useEffect, useRef, useState } from 'react';
+import profilepic from '../../images/profile.jpg';
+
+
 const RevealFromTop = ({ children, delay = 0 }) => {
   const [isVisible, setIsVisible] = useState(false);
   const ref = useRef(null);
@@ -92,7 +93,7 @@ const RevealFromRight = ({ children, delay = 0 }) => {
   );
 };
 
-// Skill Item with individual animation
+
 const SkillItem = ({ children, index }) => {
   const [isVisible, setIsVisible] = useState(false);
   const ref = useRef(null);
@@ -124,7 +125,7 @@ const SkillItem = ({ children, index }) => {
   );
 };
 
-// Main About Component
+
 export const About = () => {
   const frontendSkills = [
     "React",
@@ -140,92 +141,40 @@ export const About = () => {
     <section id="about" className="min-h-screen flex items-center justify-center py-20">
       <div className="max-w-6xl mx-auto px-4">
         <RevealFromTop>
-          <h2 className="text-3xl font-bold mb-8 bg-gradient-to-r from-blue-500 to-cyan-400 bg-clip-text text-transparent text-center">
-            About Me
+          <h2 className="text-7xl font-bold mb-8 bg-gradient-to-r font-bold text-center">
+            About <span className='text-yellow-300'>Me</span>
           </h2>
         </RevealFromTop>
 
         <div className="flex flex-col lg:flex-row gap-8 items-center">
-          {/* Content Column */}
           <div className="flex-1">
             <RevealFromTop delay="100">
-              <div className="rounded-xl p-8 border border-white/10 hover:-translate-y-1 transition-all">
-                <p className="text-gray-300 mb-6">
-                  Passionate developer with expertise in building scalable web
-                  applications and creating innovative solutions.
+              <div className="rounded-xl p-8 border border-white/10 hover:-translate-y-1 hover:scale-105 transition-all">
+                <p className="text-white mb-6 font-mono text-justify text-md">
+                I'm <span className='text-yellow-300'>Rymbrent Rabano</span>, a recent graduate based in <span className='text-yellow-300'>Madapdap, Mabalacat, Pampanga,</span>  and a dedicated Full Stack Developer with a strong focus on frontend development and WordPress. 
+                I specialize in building clean, responsive, and user-centered interfaces that offer smooth and engaging experiences across devices. 
+                With a solid understanding of both <span className='text-yellow-300'>frontend</span> and <span className='text-yellow-300'>backend</span> technologies, I bring <span className='text-yellow-300'>flexibility</span> and <span className='text-yellow-300'>efficiency</span> to every project I work on.
                 </p>
-
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                  <div className="rounded-xl p-6 hover:-translate-y-1 transition-all">
-                    <RevealFromLeft delay="200">
-                      <h3 className="text-xl font-bold mb-4">Frontend</h3>
-                    </RevealFromLeft>
-                    <div className="flex flex-wrap gap-2">
-                      {frontendSkills.map((tech, index) => (
-                        <SkillItem key={index} index={index}>
-                          {tech}
-                        </SkillItem>
-                      ))}
-                    </div>
-                  </div>
-
-                  <div className="rounded-xl p-6 hover:-translate-y-1 transition-all">
-                    <RevealFromRight delay="200">
-                      <h3 className="text-xl font-bold mb-4">Backend</h3>
-                    </RevealFromRight>
-                    <div className="flex flex-wrap gap-2">
-                      {backendSkills.map((tech, index) => (
-                        <SkillItem key={index} index={index + frontendSkills.length}>
-                          {tech}
-                        </SkillItem>
-                      ))}
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </RevealFromTop>
-
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
-              <RevealFromLeft delay="300">
-                <div className="p-6 rounded-xl border border-white/10 hover:-translate-y-1 transition-all">
-                  <h3 className="text-xl font-bold mb-4">🏫 Education</h3>
-                  <ul className="list-disc list-inside text-gray-300 space-y-2">
-                    <li>
-                      <strong>B.S. in Computer Science</strong> - XYZ University (2016-2020)
-                    </li>
-                    <li>Relevant Coursework: Data Structures, Web Development, Cloud Computing...</li>
-                  </ul>
-                </div>
-              </RevealFromLeft>
-
-              <RevealFromRight delay="300">
-                <div className="p-6 rounded-xl border border-white/10 hover:-translate-y-1 transition-all">
-                  <h3 className="text-xl font-bold mb-4">💼 Work Experience</h3>
-                  <div className="space-y-4 text-gray-300">
-                    <div>
-                      <h4 className="font-semibold">Software Engineer at ABC Corp (2020 - Present)</h4>
-                      <p>Developed and maintained microservices for cloud-based applications.</p>
-                    </div>
-                    <div>
-                      <h4 className="font-semibold">Intern at DEF Startups (2019)</h4>
-                      <p>Assisted in building front-end components and integration REST APIs</p>
-                    </div>
-                  </div>
-                </div>
-              </RevealFromRight>
-            </div>
+                <p className="text-white mb-6 font-mono text-justify">
+                I’m known for my <span className='text-yellow-300'>creativity</span>, <span className='text-yellow-300'>adaptability</span>, and being a <span className='text-yellow-300'>fast learner</span>. 
+                I’m always eager to take on new challenges, explore emerging technologies, and refine my skills through hands-on experience. 
+                Whether developing a solution from scratch or enhancing existing systems, I aim to deliver results that are not only functional but also visually impactful.
+                </p>
+              </div>            
+              </RevealFromTop>
           </div>
-
-          {/* Image Column */}
-          <RevealFromRight delay="400">
+ 
+          <RevealFromRight delay={200}>
             <div className="flex-1 flex justify-center lg:justify-end">
-              <div className="relative w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 rounded-full overflow-hidden border-4 border-blue-500/20 hover:border-blue-500/40 transition-all duration-300 group">
-                <img 
-                  src="/images/profile.jpg" // Image path remains unchanged
-                  alt="Profile"
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                />
-                <div className="absolute inset-0 bg-blue-500/10 group-hover:bg-transparent transition-all duration-300"></div>
+                <div className="relative w-64 h-80 md:w-80 md:h-96 lg:w-96 lg:h-[28rem] overflow-hidden border border-transparent hover:border-yellow-300 hover:rounded-lg transition-all duration-300 group shadow-[0_4px_20px_rgba(234,179,8,0.1)] hover:shadow-[0_8px_30px_rgba(234,179,8,0.2)]">
+                <img src={profilepic} alt="Profile" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 r"/>
+                <div className="absolute inset-0 bg-gradient-to-t  via-transparent to-transparent opacity-70 group-hover:opacity-30 transition-all duration-500"></div>
+                <div className="absolute inset-0 border-8 border-transparent  transition-all duration-700"></div>
+      
+              <div className="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/80 to-transparent text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <h3 className="text-xl font-bold">Rymbrent Rabano</h3>
+                <p className="text-sm text-yellow-300">Full Stack Developer</p>
+                </div>
               </div>
             </div>
           </RevealFromRight>

@@ -7,7 +7,7 @@ export const Home = () => {
 
                 <h2 className="text-5xl md:text-7xl font-bold mb-6">Hi, I'm Rymbrent</h2>
                 
-                <p className="text-yellow-300 text-lg mb-8 max-w-3xl mx-auto text-justify">
+                <p className="text-yellow-300 text-lg mb-8 max-w-3xl mx-auto text-justify font-mono">
                  Frontend Developer | Backend Developer | Wordpress Developer
                 </p>
 

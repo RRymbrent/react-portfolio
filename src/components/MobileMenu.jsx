@@ -19,6 +19,9 @@ export const MobileMenu = ({ menuOpen, setMenuOpen }) => {
       <a href="#about" onClick={() => setMenuOpen(false)}
         className={`text-2xl font-semibold text-white my-4 px-4 py-2 transition-all duration-300 transform hover:bg-white hover:text-black rounded-md
             ${menuOpen ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"}`}>About</a>
+      <a href="#skills" onClick={() => setMenuOpen(false)}
+        className={`text-2xl font-semibold text-white my-4 px-4 py-2 transition-all duration-300 transform hover:bg-white hover:text-black rounded-md
+            ${menuOpen ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"}`}>Skills</a>
       <a href="#projects"onClick={() => setMenuOpen(false)}
         className={`text-2xl font-semibold text-white my-4 px-4 py-2 transition-all duration-300 transform hover:bg-white hover:text-black rounded-md
             ${menuOpen ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"}`}>Projects</a>
