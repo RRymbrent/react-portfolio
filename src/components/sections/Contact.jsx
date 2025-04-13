@@ -11,10 +11,9 @@ export const Contact = () => {
         message: "",
     });
     
-    // Remove triggerOnce to make it work on both scroll directions
+    
     const [ref, inView] = useInView({
         threshold: 0.2,
-        // Add this to trigger animation every time element comes into view
         triggerOnce: false,
     });
 
@@ -30,7 +29,7 @@ export const Contact = () => {
         }).catch(() => alert("Oops! Something went wrong. Please try again"))
     }
 
-    // Animation variants - modified for bidirectional scrolling
+    
     const containerVariants = {
         hidden: { opacity: 0, y: 50 },
         visible: {
@@ -43,7 +42,7 @@ export const Contact = () => {
                 staggerChildren: 0.2
             }
         },
-        // Add exit animation for when scrolling up
+        
         exit: {
             opacity: 0,
             y: 50,
@@ -64,7 +63,7 @@ export const Contact = () => {
                 ease: "easeOut"
             }
         },
-        // Add exit animation for items
+        
         exit: {
             opacity: 0,
             y: 20,
@@ -95,7 +94,7 @@ export const Contact = () => {
 
     return (
         <section id="contact" className="min-h-screen flex flex-col items-center justify-center py-20 px-4">
-        {/* Centered Heading */}
+        
         <motion.div 
             ref={ref}
             initial="hidden"
@@ -115,9 +114,9 @@ export const Contact = () => {
             </motion.h2>
         </motion.div>
     
-        {/* Content Container - Image and Form Side by Side */}
+        
         <div className="flex flex-col md:flex-row items-center justify-center gap-12 w-full max-w-6xl">
-            {/* Left Side - Image */}
+            
             <motion.div 
                 ref={ref}
                 initial="hidden"
@@ -127,13 +126,13 @@ export const Contact = () => {
             >
                 <motion.div variants={itemVariants} className="mb-8">
                     <img 
-                        src= {daisy} // Replace with your image path
+                        src= {daisy} 
                         alt="Contact illustration"
                         className="w-70 max-w-md rounded-lg shadow-lg"
                     />
                 </motion.div>
                 
-                {/* Social Media Buttons */}
+                
                 <motion.div 
                     className="flex gap-6"
                     variants={itemVariants}
@@ -174,7 +173,7 @@ export const Contact = () => {
                 </motion.div>
             </motion.div>
     
-            {/* Right Side - Form */}
+            
             <motion.div 
                 ref={ref}
                 initial="hidden"

@@ -13,7 +13,7 @@ export const Home = () => {
                  Frontend Developer | Backend Developer | Wordpress Developer
                 </p>
 
-                {/* Social Media Buttons */}
+                
                 <div className="flex justify-center space-x-4 mb-8">
                     <a 
                         href="https://www.linkedin.com/in/rymbrent-rabano/" 

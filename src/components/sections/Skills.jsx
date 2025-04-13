@@ -133,7 +133,7 @@ export const Skills = () => {
           </h2>
         </motion.div>
         
-        {/* Frontend Skills Slider */}
+        
         <motion.div className="mb-16" variants={itemVariants}>
           <h3 className="text-2xl font-bold mb-8 text-white text-center">Frontend</h3>
           <motion.div 
@@ -167,7 +167,7 @@ export const Skills = () => {
           </motion.div>
         </motion.div>
         
-        {/* Backend Skills Slider */}
+        
         <motion.div variants={itemVariants}>
           <h3 className="text-2xl font-bold mb-8 text-white text-center">Backend</h3>
           <motion.div 

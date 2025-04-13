@@ -4,7 +4,7 @@ import daisy from '.././images/daisy.png';
 export const LoadingScreen = ({ onComplete }) => {
     const [text, setText] = useState("");
     const [scale, setScale] = useState(0.5); 
-    const fullText = "<Hello world />";
+    const fullText = "<Rymbrent Rabano />";
 
     useEffect(() => {
         let index = 0;

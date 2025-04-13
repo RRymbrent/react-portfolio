@@ -6,7 +6,7 @@ const RevealAnimation = ({ children, from = 'top', delay = 0 }) => {
   const controls = useAnimation();
   const [ref, inView] = useInView({
     threshold: 0.1,
-    triggerOnce: false, // Trigger on both scroll directions
+    triggerOnce: false, 
   });
 
   const variants = {
