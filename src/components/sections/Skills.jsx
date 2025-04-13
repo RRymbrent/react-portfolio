@@ -42,7 +42,7 @@ export const Skills = () => {
   const frontendPositionRef = useRef(0);
   const backendPositionRef = useRef(0);
   
-  const speed = 1;
+  const speed = 0.5;
   const sectionRef = useRef(null);
   const isInView = useInView(sectionRef, { once: false, amount: 0.3 });
 
@@ -127,7 +127,10 @@ export const Skills = () => {
     >
       <div className="w-full max-w-6xl mx-auto px-4">
         <motion.div className="text-center z-10" variants={itemVariants}>
-          <h2 className="text-7xl font-bold mb-16 text-white">Skills</h2>
+          <h2 className="text-7xl font-bold mb-16 text-white">Skills
+          <div className="h-1 bg-gradient-to-r from-yellow-500 to-yellow-300 mt-4 mx-auto w-50 rounded-full transition-all duration-700" />
+
+          </h2>
         </motion.div>
         
         {/* Frontend Skills Slider */}

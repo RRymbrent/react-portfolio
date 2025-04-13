@@ -141,9 +141,12 @@ export const About = () => {
     <section id="about" className="min-h-screen flex items-center justify-center py-20">
       <div className="max-w-6xl mx-auto px-4">
         <RevealFromTop>
-          <h2 className="text-7xl font-bold mb-8 bg-gradient-to-r font-bold text-center">
+          <h2 className="text-7xl font-bold mb-8 bg-gradient-to-r text-center">
             About <span className='text-yellow-300'>Me</span>
+          <div className="h-1 bg-gradient-to-r from-yellow-500 to-yellow-300 mt-0.5 mx-auto w-50 h-2 rounded-full transition-all duration-700" />
+
           </h2>
+          
         </RevealFromTop>
 
         <div className="flex flex-col lg:flex-row gap-8 items-center">

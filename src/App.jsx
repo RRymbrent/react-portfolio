@@ -5,10 +5,12 @@ import { Navbar } from "./components/Navbar";
 import { MobileMenu } from "./components/MobileMenu";
 import { Home } from "./components/sections/Home";
 import { About } from "./components/sections/About";
-import { Skills} from "./components/sections/Skills"
+import { Skills} from "./components/sections/Skills";
+import { Projects } from "./components/sections/Projects";
 import "./index.css";
 import Particles from "react-tsparticles";
 import { loadSlim } from "tsparticles-slim";
+import { Contact } from "./components/sections/Contact";
 
 function App() {
   const [isLoaded, setIsLoaded] = useState(false);
@@ -41,7 +43,6 @@ function App() {
 
   return (
     <div className="relative min-h-screen bg-black">
-      {/* Particles Background */}
       <Particles
         id="tsparticles"
         init={particlesInit}
@@ -59,7 +60,14 @@ function App() {
             color: "transparent",
           },
           particles: {
-            color: { value: "#ffffff" },
+            color: { value: "#ffff00"},
+            links: {
+              color: "#ffffff",
+              distance: 150,
+              enable: true,
+              opacity: 0.5,
+              width: 1
+            },
             move: {
               enable: true,
               speed: 1.5,
@@ -78,7 +86,7 @@ function App() {
         }}
       />
 
-      {/* Loading Screen */}
+      
       {!isLoaded && <LoadingScreen onComplete={() => setIsLoaded(true)} />}
 
       {/* Main Content */}
@@ -88,9 +96,9 @@ function App() {
         <Home />
         <About />
         <Skills />
+        <Projects />
+        <Contact />
       </div>
-
-      {/* Back to Top Button */}
       {showScrollButton && (
         <button
           onClick={scrollToTop}
