@@ -119,7 +119,7 @@ export const Skills = () => {
   return (
     <motion.section 
       id="skills" 
-      className="min-h-screen flex flex-col items-center justify-center py-20 overflow-hidden relative bg-black"
+      className="min-h-screen flex flex-col items-center justify-center py-20 overflow-hidden relative bg-transparent"
       ref={sectionRef}
       initial="hidden"
       animate={isInView ? "visible" : "hidden"}
